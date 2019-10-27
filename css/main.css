@@ -217,6 +217,11 @@ footer span {
 }
 
 @media all and (min-width: 1200px) {
+	header {
+		justify-content: flex-start;
+		align-items: center;
+		height: auto;
+	}
 
 	header h1 {
 		float: left;
@@ -225,6 +230,7 @@ footer span {
 	header nav {
 		float: right;
 		text-align: right;
+		padding: 46px 0;
 	}
 
 	header nav ul li {
