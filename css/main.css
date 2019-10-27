@@ -11,16 +11,17 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
 }
 
 .container{
+	max-width: 968px;
+	width: 90%;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 968px;
-	width: 80%;
+	flex-flow: row wrap;
 	/*margin: 0 auto;*/
 }
 
