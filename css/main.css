@@ -16,13 +16,12 @@ body {
 }
 
 .container{
-	max-width: 960px;
+	max-width: 1200px;
 	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
-	margin: auto;
 }
 
 h1,
@@ -33,49 +32,40 @@ h4 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
-h1 {
-	font-size: 1.875em;
-}
-h2 {
-    font-size: 1.5em;
-}
-h3 {
-	font-size: 1.125em;
-}
-h4 {
-	font-size: 0.75em;
-}
 
 p {
 	font-size: 0.875em;
 	line-height: 1.3125em;
-    padding: 0 30px;
 }
+
+
+
 
 /*The widths are in a percentage!*/
 header {
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 	width: 100%;
-	height: 250px;
+	text-align: center;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
 }
 
 header h1 {
-	/*float: left;*/
+	font-size: 1.875em;
 	margin: 0;
-	padding: 38px 0;
-	text-align: center;
+	padding: 38px 20px 20px 20px;
+	border-bottom: 3px solid #77a466;
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	text-align: center;
-	/*float: right;
-	padding: 46px 0;*/
+	padding: 20px;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -86,8 +76,7 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 0.875em;
 	list-style: none;
-	/*padding: 0 10px;
-	display: inline;*/
+	padding: 10px 0;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -97,33 +86,22 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	/*margin: 0 auto;
-	clear: both;*/
+	flex-flow: row wrap;
 }
 
-.main-image {
-	height: auto;
-	/*float: left;*/
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 2px solid #77a466;
 }
 
-.main-title {
-	width: 100%;
-	/*justify-content: center;
-	align-items: center;*/
-	height: auto;
-	/*float: left;*/
-}
 .main-title h3 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
+	font-size: 1.125em;
 }
 .main-title p {
 	padding: 0;
@@ -134,58 +112,38 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	/*width: 100%;*/
-	height: auto;
-	/*float: left;*/
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-/*.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}*/
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 0;
-}
-
 .menu {
+	list-style: none;
 	padding: 0;
 }
 .menu li {
-	list-style: none;
 	color:#77a466;
-	line-height: 1.875em;
-	padding: 0;
+	padding: 10px 0;
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em;
 	line-height: 1.3125em;
-	padding: 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 1.5em;
-	padding: 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row-wrap;
 	width: 100%;
-	height: 50px;
 	border-top: 3px solid #eee;
-	/*margin: 0 auto;
-	clear: both;*/
 	text-align: center;
 }
 footer span {
@@ -197,60 +155,46 @@ footer span {
 
 
 @media all and (min-width: 768px) {
+	.bottom-section {
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid #eee;
+	}
 
 	.section-one,
 	.section-two,
 	.section-three {
-		float: left;
 		width: 30%;
-		height: auto;
-		border-top: 1px solid #eee;
-		padding: 0 1.5%;
+		border-top: none;
 	}
 
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
-		line-height: 0.875em;
+		padding: 0 20px;
 	}
 
 }
 
 @media all and (min-width: 1200px) {
 	header {
-		justify-content: flex-start;
-		align-items: center;
-		height: auto;
+		justify-content: space-between;
 	}
 
 	header h1 {
-		float: left;
+		width: 30%;
+		text-align: left;
+		padding: 0;
+		border-bottom: none;
 	}
 
 	header nav {
-		float: right;
-		text-align: right;
-		padding: 46px 0;
+		width: 40%;
 	}
 
-	header nav ul li {
-		display: inline-block;
-	}
-
-	.section-one,
-	.section-two,
-	.section-three {
-		float: left;
-		width: 30%;
-		height: auto;
-		border-top: 1px solid #eee;
-		padding: 0 1.5%;
-	}
-
-	.section-two {
-		border-left: 1px solid #eee;
-		border-right: 1px solid #eee;
-		line-height: 0.875em;
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
 	}
 
 }
